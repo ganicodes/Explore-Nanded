@@ -1,0 +1,145 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/nanded-home-bg.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Explore Nanded</h1>
+            <span class="subheading">A City residing on river banks of Godavari enriched with it's culture and heritage</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<hr>
+<body>
+  <h2 class="text-center">Welcome to "City of Gurudwaras"</h2>
+  <hr>
+  <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex w-full mb-20 flex-wrap">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Why should you visit Nanded ?</h1>
+      <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Well, there are alot of reasons to visit Nanded. It's culture, scenic views, natural beauty and of course the river bank of Godavari. Some of these reasons you can see in the photos below. You'd love to visit this city after seeing them.</p>
+    </div>
+    <div class="flex flex-wrap md:-m-2 -m-1">
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="Sahasrakund Waterfall" class="w-full object-cover h-full object-center block" src="{{ url_for('static', filename='img/nanded2.jpg')}}" width="500" height="300">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="Kandhar Fort" class="w-full object-cover h-full object-center block" src="{{ url_for('static', filename='img/nanded5.jpg')}}" width="501" height="301">
+        </div>
+        <div class="md:p-2 p-1 w-full">
+          <img alt="Abchal Nagar Gurudwara" class="w-full h-full object-cover object-center block" src="{{ url_for('static', filename='img/nanded4.jpg')}}" width="600" height="400" >
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="{{ url_for('static', filename='img/extra.jpg')}}">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="Ratneshwari Mandir" class="w-full object-cover h-full object-center block" src="{{ url_for('static', filename='img/nanded6.jpg')}}">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="{{ url_for('static', filename='img/nanded8.jpg')}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Food at Nanded</h1>
+        <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Nanded is also well known for its food. Its specifically famous for its street food. It also have some standard quality hotels and restaurants. It also has various cafes that attract millenials.</p>
+    </div>
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="food1" class="object-cover object-center h-full w-full" src="{{ url_for('static', filename='img/food1.png')}}">
+        </div>
+
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="food2" class="object-cover object-center h-full w-full" src="{{ url_for('static', filename='img/food2.jpg')}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="food3" class="object-cover object-center h-full w-full" src="{{ url_for('static', filename='img/food3.png')}}">
+        </div>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="food4" class="object-cover object-center h-full w-full" src="{{ url_for('static', filename='img/food4.png')}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Scenic Beauty</h1>
+      <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Nanded is rich with its natural scenery. It is surrounder by Godavari and Ashna rivers. It also has some hills with lush green plants. Sunset at river banks of Godavari is something which every Nandedkar loves.</p>
+    </div>
+    <div class="lg:w-2/3 mx-auto">
+      <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+        <img alt="scenic3" class="w-full object-cover h-full object-center block opacity-100 absolute inset-0" src="{{ url_for('static', filename='img/scenic3.png')}}">
+      </div>
+      <div class="flex flex-wrap -mx-2">
+        <div class="px-2 w-1/2">
+          <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+            <img alt="scenic2" class="w-full object-cover h-full object-center block opacity-100 absolute inset-0" src="{{ url_for('static', filename='img/scenic2.png')}}">
+          </div>
+        </div>
+        <div class="px-2 w-1/2">
+          <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+            <img alt="scenic5" class="w-full object-cover h-full object-center block opacity-100 absolute inset-0" src="{{ url_for('static', filename='img/scenic5.png')}}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="lg:w-2/3 mx-auto">
+      <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+        <img alt="raod3" class="w-full object-cover h-full object-center block opacity-100 absolute inset-0" src="{{ url_for('static', filename='img/road3.png')}}">
+      </div>
+      <div class="flex flex-wrap -mx-2">
+        <div class="px-2 w-1/2">
+          <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+            <img alt="road2" class="w-full object-cover h-full object-center block opacity-100 absolute inset-0" src="{{ url_for('static', filename='img/road2.png')}}">
+          </div>
+        </div>
+        <div class="px-2 w-1/2">
+          <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+            <img alt="road1" class="w-full object-cover h-full object-center block opacity-100 absolute inset-0" src="{{ url_for('static', filename='img/road1.png')}}">
+          </div>
+        </div>
+          <p class="mb-8 leading-relaxed text-center">Nanded is also blessed with some soothing and relaxing roads which are very good for a walk around city.</p>
+      </div>
+    </div>
+  </div>
+</section> 
+</body>
+{% endblock %}

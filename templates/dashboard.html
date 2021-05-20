@@ -1,0 +1,48 @@
+{% extends "layout2.html" %}
+{% block body %}
+
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/matrix.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Admin Panel</h1>
+            <span class="subheading">Manage your website</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<div class="text-center padded">
+  <style type="text/css">
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+  </style>
+  <table class="table table-bordered table-dark">
+    <thead>
+      <tr>
+        <th scope="col">S.no</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Date</th>
+        <th scope="col">Message</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for contact in contacts %}
+      <tr>
+        <th>{{contact.sno }}</th>
+        <td>{{contact.name }}</td>
+        <td>{{contact.email }}</td>
+        <td>{{contact.phone_num }}</td>
+        <td>{{contact.date }}</td>
+        <td>{{contact.msg }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
